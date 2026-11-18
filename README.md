@@ -7,6 +7,8 @@ By DeFlight, LLC.
 > [!IMPORTANT]
 > **CarPlay only for now. Android Auto isn't supported yet.** The phone choices (screens, apps, Siri, media keys) work with Apple CarPlay. The **Android Auto** side of the CarPlay | Android Auto switch is shown as **SOON** and can't be picked. Car, Seek, Tune and Preset choices work whatever phone you use, or with none.
 
+![The Button Mapper setup screen](docs/img/setup-screen.png)
+
 ## Contents
 
 - [What you can set](#what-you-can-set)
@@ -40,6 +42,9 @@ Open the **Button Mapper** tile in the car's app menu. Every change saves at onc
   - **Done:** the checked buttons become My buttons. Unchecked buttons go back to Default and leave My buttons.
   - **Cancel** (or leaving the screen, or 5 minutes without a tap): nothing changes.
 - **A button's card** has a **Press** row and a **Hold** row. Tap a row to pick what it does. The icon and the small tag on the right show what it's set to.
+
+  ![Picking what a press does](docs/img/picker.png)
+
 - **✕** at the top right of a card (My buttons) removes that button. It asks first, then sets the button's press and hold back to Default and takes it out of My buttons. All buttons still lists it.
 - **Reset all to Default** puts every button's press and hold back to what the car does, for the profile you're editing. It asks first.
 - **CarPlay | Android Auto:** which phone the phone choices go to. Android Auto is coming; for now it shows as **SOON** and can't be picked.
