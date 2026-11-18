@@ -1,0 +1,1693 @@
+{
+  "version": 1,
+  "settings": [
+    {
+      "key": "custom",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "Head Unit \u2606 press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "custom_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Head Unit \u2606 press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "custom_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Head Unit \u2606 press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "custom_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "Head Unit \u2606 press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "custom_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "Head Unit \u2606 press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "custom_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "Head Unit \u2606 hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "custom_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Head Unit \u2606 hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "custom_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Head Unit \u2606 hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "custom_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "Head Unit \u2606 hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "custom_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "Head Unit \u2606 hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "wheel_custom",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "Steering Wheel \u2605 press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "wheel_custom_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Steering Wheel \u2605 press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "wheel_custom_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Steering Wheel \u2605 press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "wheel_custom_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "Steering Wheel \u2605 press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "wheel_custom_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "Steering Wheel \u2605 press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "wheel_custom_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "Steering Wheel \u2605 hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "wheel_custom_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Steering Wheel \u2605 hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "wheel_custom_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "Steering Wheel \u2605 hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "wheel_custom_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "Steering Wheel \u2605 hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "wheel_custom_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "Steering Wheel \u2605 hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "home",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "HOME press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "home_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "HOME press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "home_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "HOME press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "home_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "HOME press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "home_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "HOME press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "home_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "HOME hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "home_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "HOME hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "home_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "HOME hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "home_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "HOME hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "home_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "HOME hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "map",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MAP press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "map_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MAP press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "map_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MAP press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "map_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MAP press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "map_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MAP press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "map_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MAP hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "map_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MAP hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "map_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MAP hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "map_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MAP hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "map_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MAP hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "navi",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "NAV press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "navi_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "NAV press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "navi_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "NAV press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "navi_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "NAV press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "navi_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "NAV press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "navi_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "NAV hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "navi_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "NAV hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "navi_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "NAV hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "navi_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "NAV hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "navi_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "NAV hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "media",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MEDIA press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "media_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MEDIA press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "media_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MEDIA press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "media_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MEDIA press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "media_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MEDIA press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "media_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MEDIA hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "media_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MEDIA hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "media_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MEDIA hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "media_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MEDIA hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "media_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MEDIA hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "radio",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "RADIO press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "radio_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "RADIO press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "radio_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "RADIO press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "radio_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "RADIO press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "radio_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "RADIO press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "radio_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "RADIO hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "radio_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "RADIO hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "radio_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "RADIO hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "radio_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "RADIO hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "radio_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "RADIO hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "phone",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "PHONE press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "phone_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "PHONE press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "phone_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "PHONE press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "phone_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "PHONE press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "phone_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "PHONE press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "phone_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "PHONE hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "phone_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "PHONE hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "phone_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "PHONE hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "phone_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "PHONE hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "phone_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "PHONE hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "setup",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SETUP press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "setup_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SETUP press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "setup_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SETUP press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "setup_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SETUP press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "setup_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SETUP press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "setup_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SETUP hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "setup_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SETUP hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "setup_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SETUP hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "setup_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SETUP hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "setup_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SETUP hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "seek_up",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK UP (head unit) press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "seek_up_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (head unit) press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "seek_up_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (head unit) press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "seek_up_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK UP (head unit) press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "seek_up_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK UP (head unit) press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "seek_up_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK UP (head unit) hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "seek_up_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (head unit) hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "seek_up_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (head unit) hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "seek_up_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK UP (head unit) hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "seek_up_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK UP (head unit) hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "seek_down",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK DOWN (head unit) press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "seek_down_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (head unit) press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "seek_down_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (head unit) press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "seek_down_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK DOWN (head unit) press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "seek_down_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK DOWN (head unit) press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "seek_down_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK DOWN (head unit) hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "seek_down_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (head unit) hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "seek_down_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (head unit) hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "seek_down_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK DOWN (head unit) hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "seek_down_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK DOWN (head unit) hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "tune_up",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "TUNE UP press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "tune_up_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE UP press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "tune_up_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE UP press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "tune_up_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "TUNE UP press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "tune_up_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "TUNE UP press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "tune_up_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "TUNE UP hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "tune_up_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE UP hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "tune_up_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE UP hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "tune_up_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "TUNE UP hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "tune_up_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "TUNE UP hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "tune_down",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "TUNE DOWN press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "tune_down_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE DOWN press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "tune_down_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE DOWN press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "tune_down_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "TUNE DOWN press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "tune_down_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "TUNE DOWN press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "tune_down_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "TUNE DOWN hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "tune_down_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE DOWN hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "tune_down_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "TUNE DOWN hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "tune_down_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "TUNE DOWN hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "tune_down_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "TUNE DOWN hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "mode",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MODE press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "mode_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MODE press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "mode_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MODE press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "mode_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MODE press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "mode_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MODE press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "mode_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MODE hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "mode_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MODE hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "mode_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MODE hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "mode_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MODE hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "mode_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MODE hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "call",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "CALL press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "call_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CALL press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "call_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CALL press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "call_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "CALL press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "call_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "CALL press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "call_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "CALL hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "call_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CALL hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "call_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CALL hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "call_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "CALL hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "call_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "CALL hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "ptt",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "VOICE press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "ptt_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "VOICE press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "ptt_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "VOICE press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "ptt_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "VOICE press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "ptt_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "VOICE press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "ptt_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "VOICE hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "ptt_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "VOICE hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "ptt_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "VOICE hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "ptt_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "VOICE hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "ptt_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "VOICE hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "mute",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MUTE press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "mute_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MUTE press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "mute_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MUTE press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "mute_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MUTE press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "mute_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MUTE press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "mute_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "MUTE hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "mute_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MUTE hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "mute_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "MUTE hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "mute_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "MUTE hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "mute_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "MUTE hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "channel_up",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK UP (steering wheel) press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "channel_up_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (steering wheel) press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "channel_up_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (steering wheel) press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "channel_up_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK UP (steering wheel) press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "channel_up_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK UP (steering wheel) press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "channel_up_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK UP (steering wheel) hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "channel_up_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (steering wheel) hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "channel_up_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK UP (steering wheel) hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "channel_up_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK UP (steering wheel) hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "channel_up_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK UP (steering wheel) hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "channel_down",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "channel_down_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "channel_down_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "channel_down_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "channel_down_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "channel_down_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "channel_down_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "channel_down_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "channel_down_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "channel_down_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "SEEK DOWN (steering wheel) hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "poi",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "POI press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "poi_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "POI press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "poi_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "POI press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "poi_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "POI press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "poi_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "POI press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "poi_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "POI hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "poi_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "POI hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "poi_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "POI hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "poi_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "POI hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "poi_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "POI hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "connect",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) press",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "connect_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) press: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "connect_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) press: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "connect_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) press: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "connect_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) press: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "connect_hold",
+      "type": "text",
+      "default": "off",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) hold",
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, carhome, carback, custom, carapp, off (off: Default, the car's own)."
+    },
+    {
+      "key": "connect_hold_custom",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) hold: custom CarPlay app",
+      "description": "Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are ignored; capital letters are kept. If the phone doesn't know the name, nothing happens."
+    },
+    {
+      "key": "connect_hold_app",
+      "type": "text",
+      "default": "",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) hold: car app",
+      "description": "Used when this press is set to Car app: the app's screen as package/class, picked on the setup screen."
+    },
+    {
+      "key": "connect_hold_send",
+      "type": "text",
+      "default": "none",
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) hold: car key sent",
+      "description": "Set by the app: the car button HMG-API presses instead (seek_up, seek_down, tune_up, tune_down, channel_up, channel_down), or none."
+    },
+    {
+      "key": "connect_hold_on",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "CONNECT (Bluelink / Kia Connect) hold: taken from the car",
+      "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected."
+    },
+    {
+      "key": "finding",
+      "type": "boolean",
+      "default": false,
+      "private": true,
+      "title": "Find my buttons running",
+      "description": "Set by the setup screen while Find my buttons runs: every listed button's press (the stars' hold) goes to the setup screen."
+    }
+  ]
+}

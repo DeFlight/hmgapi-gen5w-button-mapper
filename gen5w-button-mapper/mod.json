@@ -1,0 +1,2265 @@
+{
+  "id": "gen5w-button-mapper",
+  "name": "Gen5W Button Mapper",
+  "version": "1.0.0",
+  "hmgapi": ">=1.0.0",
+  "authors": [
+    "DeFlight, LLC"
+  ],
+  "license": "MIT",
+  "description": "Choose what each button's press and hold do: a CarPlay screen or media key, a car screen or any app on the car, the car's Home or Back, or Default (what the car does). MAP, NAV, MEDIA, RADIO, PHONE, SETUP, HOME, SEEK, TUNE, MODE, CALL, VOICE, MUTE, POI, CONNECT and the \u2606 \u2605 buttons, whichever the car has. CarPlay choices work only while a phone is connected; otherwise the button does what the car does. Set it up from the Button Mapper tile in the app menu. Each of the car's profiles (Profile 1, Profile 2, Guest) has its own buttons and they switch with the car. Three presses of NAV within 1.5 s each still open NEMESIS Manager.",
+  "apps": [
+    {
+      "apk": "app/ButtonMapper.apk",
+      "package": "com.deflight.buttonmapper"
+    }
+  ],
+  "hooks": {
+    "jar": "hooks.jar",
+    "entry": "com.deflight.buttonmapper.hooks.Entry"
+  },
+  "provides": {
+    "launcher": [
+      {
+        "package": "com.deflight.buttonmapper",
+        "class": ".Setup",
+        "title": "Button Mapper",
+        "icon": "icon/icon.png",
+        "icon_night": "icon/icon_night.png",
+        "icon_disabled": "icon/icon_disabled.png",
+        "icon_disabled_night": "icon/icon_disabled_night.png"
+      }
+    ],
+    "star_key": [
+      {
+        "id": "hu",
+        "title": "Button Mapper: Head Unit \u2606",
+        "broadcast": "com.deflight.buttonmapper.STAR_HU"
+      },
+      {
+        "id": "wheel",
+        "title": "Button Mapper: Steering Wheel \u2605",
+        "broadcast": "com.deflight.buttonmapper.STAR_WHEEL"
+      }
+    ]
+  },
+  "input": [
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_on",
+      "broadcast": "com.deflight.buttonmapper.PRESS"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.custom_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.wheel_custom_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.home_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "home",
+      "press": "hold",
+      "when": "settings.home_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.map_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "map",
+      "press": "hold",
+      "when": "settings.map_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.navi_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "navi",
+      "press": "hold",
+      "when": "settings.navi_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.media_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "media",
+      "press": "hold",
+      "when": "settings.media_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.radio_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "radio",
+      "press": "hold",
+      "when": "settings.radio_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.phone_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "phone",
+      "press": "hold",
+      "when": "settings.phone_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.setup_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "setup",
+      "press": "hold",
+      "when": "settings.setup_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_up_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "seek_up",
+      "press": "hold",
+      "when": "settings.seek_up_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.seek_down_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "seek_down",
+      "press": "hold",
+      "when": "settings.seek_down_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_up_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "tune_up",
+      "press": "hold",
+      "when": "settings.tune_up_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.tune_down_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "tune_down",
+      "press": "hold",
+      "when": "settings.tune_down_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mode_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "mode",
+      "press": "hold",
+      "when": "settings.mode_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.call_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "call",
+      "press": "hold",
+      "when": "settings.call_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.ptt_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "ptt",
+      "press": "hold",
+      "when": "settings.ptt_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.mute_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "mute",
+      "press": "hold",
+      "when": "settings.mute_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_up_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "channel_up",
+      "press": "hold",
+      "when": "settings.channel_up_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.channel_down_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "channel_down",
+      "press": "hold",
+      "when": "settings.channel_down_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.poi_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "poi",
+      "press": "hold",
+      "when": "settings.poi_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.connect_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=seek_up",
+      "send": "seek_up short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=seek_down",
+      "send": "seek_down short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=tune_up",
+      "send": "tune_up short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=tune_down",
+      "send": "tune_down short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=channel_up",
+      "send": "channel_up short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=channel_down",
+      "send": "channel_down short"
+    },
+    {
+      "key": "connect",
+      "press": "hold",
+      "when": "settings.connect_hold_send=home",
+      "send": "home short"
+    },
+    {
+      "key": "custom",
+      "press": "hold",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "wheel_custom",
+      "press": "hold",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "home",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "map",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "navi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "media",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "radio",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "phone",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "setup",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "seek_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "seek_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "tune_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "tune_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "mode",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "call",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "ptt",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "mute",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "channel_up",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "channel_down",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "poi",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    },
+    {
+      "key": "connect",
+      "press": "short",
+      "stock": "replace",
+      "when": "settings.finding",
+      "broadcast": "com.deflight.buttonmapper.FOUND"
+    }
+  ]
+}

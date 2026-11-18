@@ -1,0 +1,74 @@
+name: My car / it doesn't work
+description: Report a car it works on, or something that doesn't work, with what we need to fix it
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying Gen5W Button Mapper. The details below let us see what your car is doing without guessing.
+  - type: input
+    id: car
+    attributes:
+      label: Car
+      description: Make, model, year, trim and region
+      placeholder: 2025 Hyundai Ioniq 6 Limited, US
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Head unit software
+      description: Shown in HMG-API's Car Report
+      placeholder: CEEV.USA.0000.V015.012.260507
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: HMG-API and Gen5W Button Mapper versions
+      placeholder: HMG-API 1.1.0, Gen5W Button Mapper 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Installed with
+      options: [HMG-API app, NEMESIS]
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: iPhone and iOS version, wired or wireless CarPlay
+      placeholder: iPhone 16 Pro, iOS 27.2.1, wireless
+    validations:
+      required: true
+  - type: dropdown
+    id: hookmap
+    attributes:
+      label: Does HMG-API have a hook map for your car?
+      description: HMG-API's Car Report shows it. Without one, nothing works inside CarPlay, and Home Button and Siri don't work.
+      options: ["Yes", "No", "Don't know"]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: For each button you tried, what it is set to, where you pressed it (car's screens or inside CarPlay) and what happened
+      placeholder: |
+        MAP (CarPlay: Home Button), inside CarPlay: nothing happens
+        NAV (CarPlay: Maps), from the radio screen: opens CarPlay Maps
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Button Mapper log
+      description: In the HMG-API app, open Gen5W Button Mapper and screenshot its log right after pressing the button. Attach the screenshot here.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: HMG-API Car Report
+      description: "If something doesn't work: HMG-API app > Car Report > Make report, with a USB drive plugged in, then attach the file from the drive's `HMG-API reports` folder."
