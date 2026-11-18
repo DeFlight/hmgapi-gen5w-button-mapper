@@ -4,6 +4,8 @@ An [HMG-API](https://github.com/Open-HMG/HMG-API) mod for Hyundai, Kia and Genes
 
 By DeFlight, LLC.
 
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-0070BA?logo=paypal&logoColor=white)](https://paypal.me/deflight)
+
 > [!IMPORTANT]
 > **CarPlay only for now. Android Auto isn't supported yet.** The phone choices (screens, apps, Siri, media keys) work with Apple CarPlay. The **Android Auto** side of the CarPlay | Android Auto switch is shown as **SOON** and can't be picked. Car, Seek, Tune and Preset choices work whatever phone you use, or with none.
 
@@ -19,6 +21,7 @@ By DeFlight, LLC.
 - [Buttons that can't be set](#buttons-that-cant-be-set)
 - [Good to know](#good-to-know)
 - [Requirements](#requirements) · [Compatibility](#compatibility) · [Install](#install)
+- [Support](#support)
 
 ## What you can set
 
@@ -221,6 +224,12 @@ Updates install the same way and keep your settings. Removing the mod puts every
 ## Building
 
 `gen5w-button-mapper/build.sh` builds the app, the hooks and all the release files into `gen5w-button-mapper/out/`. It needs JDK 8 to 17, Android build-tools, an API 19 `android.jar`, HMG-API's mod SDK, and your own signing keys; the variables are listed at the top of the script. A build signed with a different author key installs as a different author, so it can't update an install of the official release.
+
+## Support
+
+Gen5W Button Mapper is free. If it's useful to you, you can leave a tip to support DeFlight's work on it and future mods: **[paypal.me/deflight](https://paypal.me/deflight)**. Tips are optional and don't unlock anything.
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-0070BA?logo=paypal&logoColor=white)](https://paypal.me/deflight)
 
 ## Credits
 
