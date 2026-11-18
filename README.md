@@ -4,6 +4,9 @@ An [HMG-API](https://github.com/Open-HMG/HMG-API) mod for Hyundai, Kia and Genes
 
 By DeFlight, LLC.
 
+> [!IMPORTANT]
+> **CarPlay only for now. Android Auto isn't supported yet.** The phone choices (screens, apps, Siri, media keys) work with Apple CarPlay. The **Android Auto** side of the CarPlay | Android Auto switch is shown as **SOON** and can't be picked. Car, Seek, Tune and Preset choices work whatever phone you use, or with none.
+
 ## Contents
 
 - [What you can set](#what-you-can-set)
@@ -147,7 +150,7 @@ HOME **can** be set. If you change it, the ⌂ at the top of the screen still ta
 - A Hyundai, Kia or Genesis with a **Gen5W** navigation head unit, the head unit HMG-API supports.
 - **[HMG-API](https://github.com/Open-HMG/HMG-API)** installed ([Installing HMG-API](https://github.com/Open-HMG/HMG-API/wiki/Installing-HMG-API)). After a car firmware update, HMG-API has to be installed again.
 - A **hook map for your car's firmware** in HMG-API (HMG-API's Car Report shows whether there is one). Without one, buttons still open CarPlay from the car's own screens. But nothing works inside CarPlay, Home Button, Siri, the media keys and Back don't work, and some car screens (Climate, Valet Mode, Notifications) won't open.
-- **CarPlay working** on the car, wired or wireless (with the [wireless CarPlay mod](https://github.com/Open-HMG/hmgapi-wireless-cp-aa)), for the CarPlay choices.
+- **CarPlay working** on the car, wired or wireless (with the [wireless CarPlay mod](https://github.com/Open-HMG/hmgapi-wireless-cp-aa)), for the CarPlay choices. **Android Auto isn't supported yet.**
 - **NEMESIS** only for the three-press NAV shortcut.
 
 ## Compatibility
