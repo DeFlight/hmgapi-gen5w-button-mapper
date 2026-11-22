@@ -117,6 +117,8 @@ Play and Pause can't be separate choices. When CarPlay connects, the car tells t
 |---|---|
 | Home | The car's own HOME button |
 | Back | The car's own back, like the ‹ at the top left of the screen |
+| Answer | The car's own Call button press: answers an incoming call; during a call, it holds or switches calls as the Call button does |
+| Reject/End | Rejects an incoming call or ends the current one. It sends the car's own end-call command, which the car passes to CarPlay. Tested with CarPlay calls; with only Bluetooth, untested |
 | Car app | A screen on the car, picked from a list (see below) |
 
 **Car app** list:
