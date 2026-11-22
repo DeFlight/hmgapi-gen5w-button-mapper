@@ -41,7 +41,7 @@ final class Icon extends View {
         if ("nowplaying".equals(v)) return "bars";
         if ("podcasts".equals(v)) return "podcast";
         if ("audiobooks".equals(v) || "audible".equals(v)) return "book";
-        if ("mobilephone".equals(v)) return "phone";
+        if ("mobilephone".equals(v) || "answercall".equals(v) || "endcall".equals(v)) return "phone";
         if ("messages".equals(v) || "whatsapp".equals(v) || "claude".equals(v)) return "bubble";
         if ("calendar".equals(v)) return "calendar";
         if ("settings".equals(v)) return "gear";

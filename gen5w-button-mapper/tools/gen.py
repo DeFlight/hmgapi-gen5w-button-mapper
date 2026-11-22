@@ -47,6 +47,8 @@ CHOICES = [
     ("claude", "CarPlay: Claude"),
     ("carhome", "Home"),
     ("carback", "Back"),
+    ("answercall", "Answer / Hold call"),
+    ("endcall", "Reject / End call"),
     ("custom", "CarPlay: Custom"),
     ("carapp", "Car app"),
     ("off", "Default"),
@@ -64,8 +66,12 @@ BUTTONS = [
     ("poi", "POI"), ("connect", "CONNECT (Bluelink / Kia Connect)"),
 ]
 STARS = ("custom", "wheel_custom")
-# the car's media keys a press can send (Choices.carKey): seek, tune, and the wheel's up/down (presets)
-CAR_KEYS = ("seek_up", "seek_down", "tune_up", "tune_down", "channel_up", "channel_down", "home")
+# the car's keys a press can send (Choices.carKey): seek, tune, the wheel's up/down (presets), HOME,
+# and the Call button: its press (answer, or hold the call) and its hold (reject or end the call).
+# (value of <slot>_send, the press HMG-API makes the car see)
+CAR_KEYS = (("seek_up", "seek_up short"), ("seek_down", "seek_down short"), ("tune_up", "tune_up short"),
+            ("tune_down", "tune_down short"), ("channel_up", "channel_up short"), ("channel_down", "channel_down short"),
+            ("home", "home short"), ("call", "call short"), ("call_hold", "call hold"))
 
 CUSTOM_HELP = ("Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone "
                "knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are "
@@ -130,11 +136,11 @@ def bindings():
             if not hold and key in STARS:
                 continue
             slot = key + ("_hold" if hold else "")
-            for send in CAR_KEYS:
+            for send, spec in CAR_KEYS:
                 b = {"key": key, "press": "hold" if hold else "short"}
                 if not hold:
                     b["stock"] = "replace"
-                b.update({"when": "settings.%s_send=%s" % (slot, send), "send": send + " short"})
+                b.update({"when": "settings.%s_send=%s" % (slot, send), "send": spec})
                 out.append(b)
     # Find my buttons: the press (a star's hold, its press is the car's ★ menu's), taken from the car
     for key, _ in BUTTONS:

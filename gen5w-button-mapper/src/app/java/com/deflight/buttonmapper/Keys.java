@@ -113,6 +113,8 @@ public final class Keys extends BroadcastReceiver {
         CAR_KEYCODES.put("tune_down", "TUNE_DOWN");
         CAR_KEYCODES.put("channel_up", "CHANNEL_UP");
         CAR_KEYCODES.put("channel_down", "CHANNEL_DOWN");
+        CAR_KEYCODES.put("call", "CALL");
+        CAR_KEYCODES.put("call_hold", "CALL");
     }
 
     /** does what the owner picked for this slot */
@@ -143,8 +145,9 @@ public final class Keys extends BroadcastReceiver {
             // a car key with no button binding to pass it on (a star's press, from the car's star
             // menu): the hook in the home menu sends it from the car's button device, as Back
             String kc = CAR_KEYCODES.get(car);
-            if (kc != null && viaMenu(c, new Intent().putExtra("keycode", kc), false, P + "MENU_KEY")) {
-                note(c, slot + " -> " + kc + " sent by the home menu");
+            boolean held = car.endsWith("_hold");
+            if (kc != null && viaMenu(c, new Intent().putExtra("keycode", kc).putExtra("hold", held), false, P + "MENU_KEY")) {
+                note(c, slot + " -> " + kc + (held ? " (held)" : "") + " sent by the home menu");
             } else {
                 note(c, slot + ": " + car + " not sent (the home menu didn't answer)");
             }

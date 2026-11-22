@@ -92,7 +92,7 @@ final class Choices {
         "calendar", "settings", "siri", "playpause", "next", "previous",
         "seekup", "seekdown", "tuneup", "tunedown", "presetup", "presetdown",
         "spotify", "tidal", "audible", "pandora", "amznmp3", "youtubemusic", "waze", "googlemaps", "whatsapp", "claude",
-        "carhome", "carback", "custom", "carapp", "off",
+        "carhome", "carback", "answercall", "endcall", "custom", "carapp", "off",
     };
     static final String[] TITLES = {
         "CarPlay: Home Button", "CarPlay: Back", "CarPlay: Maps", "CarPlay: Music", "CarPlay: Now Playing", "CarPlay: Podcasts",
@@ -100,7 +100,7 @@ final class Choices {
         "CarPlay: Siri", "CarPlay: Play/Pause", "CarPlay: Next Track", "CarPlay: Previous Track",
         "Seek Up", "Seek Down", "Tune Up", "Tune Down", "Preset Up", "Preset Down",
         "CarPlay: Spotify", "CarPlay: Tidal", "CarPlay: Audible", "CarPlay: Pandora", "CarPlay: Amazon Music", "CarPlay: YouTube Music", "CarPlay: Waze", "CarPlay: Google Maps", "CarPlay: WhatsApp", "CarPlay: Claude",
-        "Home", "Back", "CarPlay: Custom", "Car app", "Default",
+        "Home", "Back", "Answer / Hold call", "Reject / End call", "CarPlay: Custom", "Car app", "Default",
     };
 
     /*
@@ -118,7 +118,7 @@ final class Choices {
     static final String[] GROUPS = { "CarPlay", "Other CarPlay apps", "Media keys", "Car", "More" };
     static final int[][] GROUP_ITEMS = {
         range("homekey", "siri"), range("spotify", "claude"), range("playpause", "presetdown"),
-        pick("carhome", "carback", "carapp"), pick("custom", "off"),
+        pick("carhome", "carback", "answercall", "endcall", "carapp"), pick("custom", "off"),
     };
 
     /** these values, in order (the More group leaves out the old app choices) */
@@ -148,6 +148,10 @@ final class Choices {
         if ("presetup".equals(v)) return "channel_up";
         if ("presetdown".equals(v)) return "channel_down";
         if ("carhome".equals(v)) return "home";   // the car's HOME button
+        // the car's Call button, which the car hands to the phone in use (Bluetooth or CarPlay): a press
+        // answers a call (and, with one going, holds it or switches); a hold rejects or ends it
+        if ("answercall".equals(v)) return "call";
+        if ("endcall".equals(v)) return "call_hold";
         return null;
     }
 
@@ -171,7 +175,7 @@ final class Choices {
         if ("off".equals(VALUES[at])) return "";
         if ("custom".equals(VALUES[at])) return "Custom app";
         if ("carapp".equals(VALUES[at])) return "Car app";
-        if ("carhome".equals(VALUES[at]) || "carback".equals(VALUES[at])) return "Car";
+        if ("carhome".equals(VALUES[at]) || "carback".equals(VALUES[at]) || "answercall".equals(VALUES[at]) || "endcall".equals(VALUES[at])) return "Car";
         for (int g = 0; g < GROUPS.length; g++)
             for (int i : GROUP_ITEMS[g]) if (i == at) return g == 1 ? "CarPlay app" : GROUPS[g];
         return "";
