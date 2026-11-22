@@ -100,7 +100,7 @@ final class Choices {
         "CarPlay: Siri", "CarPlay: Play/Pause", "CarPlay: Next Track", "CarPlay: Previous Track",
         "Seek Up", "Seek Down", "Tune Up", "Tune Down", "Preset Up", "Preset Down",
         "CarPlay: Spotify", "CarPlay: Tidal", "CarPlay: Audible", "CarPlay: Pandora", "CarPlay: Amazon Music", "CarPlay: YouTube Music", "CarPlay: Waze", "CarPlay: Google Maps", "CarPlay: WhatsApp", "CarPlay: Claude",
-        "Home", "Back", "Answer / Hold call", "Reject / End call", "CarPlay: Custom", "Car app", "Default",
+        "Home", "Back", "Answer", "Reject/End", "CarPlay: Custom", "Car app", "Default",
     };
 
     /*
@@ -131,7 +131,7 @@ final class Choices {
     /** a choice that works without a phone: Car app, the car's Home and Back, and the car's own media keys */
     static boolean needsPhone(String v) {
         return !("off".equals(v) || "carapp".equals(v)
-                || carKey(v) != null || "carback".equals(v));
+                || carKey(v) != null || "carback".equals(v) || "endcall".equals(v));
     }
 
     /*
@@ -149,9 +149,9 @@ final class Choices {
         if ("presetdown".equals(v)) return "channel_down";
         if ("carhome".equals(v)) return "home";   // the car's HOME button
         // the car's Call button, which the car hands to the phone in use (Bluetooth or CarPlay): a press
-        // answers a call (and, with one going, holds it or switches); a hold rejects or ends it
+        // answers a call (and, with one going, holds it or switches). Its hold doesn't reject on a US
+        // Ioniq 6, so Reject/End is the car's end-call command instead (Keys.run)
         if ("answercall".equals(v)) return "call";
-        if ("endcall".equals(v)) return "call_hold";
         return null;
     }
 

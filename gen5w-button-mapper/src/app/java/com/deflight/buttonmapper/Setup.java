@@ -572,9 +572,7 @@ public final class Setup extends Activity {
                         t.addView(new Icon(this, ik, on ? ON_ACCENT : ACCENT, on ? 0x22000000 : ACCENT_DIM), gl);
                     }
                     TextView tl = text(Choices.shortTitle(at), 18, on ? ON_ACCENT : TEXT, on ? bold : regular);
-                    tl.setMaxLines(2);   // a long name (Answer / Hold call) wraps instead of being cut off
-                    tl.setEllipsize(android.text.TextUtils.TruncateAt.END);
-                    tl.setLineSpacing(0, 0.9f);
+                    tl.setSingleLine(true);
                     t.addView(tl);
                     t.setOnClickListener(new View.OnClickListener() {
                         @Override public void onClick(View v) { d.dismiss(); chose(s, at); }

@@ -114,7 +114,6 @@ public final class Keys extends BroadcastReceiver {
         CAR_KEYCODES.put("channel_up", "CHANNEL_UP");
         CAR_KEYCODES.put("channel_down", "CHANNEL_DOWN");
         CAR_KEYCODES.put("call", "CALL");
-        CAR_KEYCODES.put("call_hold", "CALL");
     }
 
     /** does what the owner picked for this slot */
@@ -131,6 +130,14 @@ public final class Keys extends BroadcastReceiver {
             }
             return;
         }
+        if ("endcall".equals(v)) {
+            // the car's end-call command (ModeManager.ACTION_SHORTCUT_BTCALLEND, reason HWKEY_SWRC): the
+            // CarPlay app (DiPO) answers it, while CarPlay is connected, with CarPlay's Drop (hang up /
+            // reject); its receiver takes it from any app
+            c.sendBroadcast(new Intent("com.hkmc.intent.action.BTCALLEND_SHORTCUT").putExtra("com.hkmc.mode.EXTRA_SHORTCUT_REASON", 0x13));
+            note(c, slot + " -> end call (the car's end-call command)");
+            return;
+        }
         if ("carback".equals(v)) {
             // the car's Back key, sent by the hook in the home menu from the car's button device; if
             // it doesn't answer, the broadcast that follows every back on the car (seen on a US
@@ -145,9 +152,8 @@ public final class Keys extends BroadcastReceiver {
             // a car key with no button binding to pass it on (a star's press, from the car's star
             // menu): the hook in the home menu sends it from the car's button device, as Back
             String kc = CAR_KEYCODES.get(car);
-            boolean held = car.endsWith("_hold");
-            if (kc != null && viaMenu(c, new Intent().putExtra("keycode", kc).putExtra("hold", held), false, P + "MENU_KEY")) {
-                note(c, slot + " -> " + kc + (held ? " (held)" : "") + " sent by the home menu");
+            if (kc != null && viaMenu(c, new Intent().putExtra("keycode", kc), false, P + "MENU_KEY")) {
+                note(c, slot + " -> " + kc + " sent by the home menu");
             } else {
                 note(c, slot + ": " + car + " not sent (the home menu didn't answer)");
             }

@@ -1,7 +1,7 @@
 {
   "id": "gen5w-button-mapper",
   "name": "Gen5W Button Mapper",
-  "version": "1.1.0-rc.2",
+  "version": "1.1.0-rc.3",
   "hmgapi": ">=1.0.0",
   "authors": [
     "DeFlight, LLC"
@@ -352,12 +352,6 @@
       "send": "call short"
     },
     {
-      "key": "custom",
-      "press": "hold",
-      "when": "settings.custom_hold_send=call_hold",
-      "send": "call hold"
-    },
-    {
       "key": "wheel_custom",
       "press": "hold",
       "when": "settings.wheel_custom_hold_send=seek_up",
@@ -404,12 +398,6 @@
       "press": "hold",
       "when": "settings.wheel_custom_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "wheel_custom",
-      "press": "hold",
-      "when": "settings.wheel_custom_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "home",
@@ -469,13 +457,6 @@
     },
     {
       "key": "home",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.home_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "home",
       "press": "hold",
       "when": "settings.home_hold_send=seek_up",
       "send": "seek_up short"
@@ -521,12 +502,6 @@
       "press": "hold",
       "when": "settings.home_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "home",
-      "press": "hold",
-      "when": "settings.home_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "map",
@@ -586,13 +561,6 @@
     },
     {
       "key": "map",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.map_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "map",
       "press": "hold",
       "when": "settings.map_hold_send=seek_up",
       "send": "seek_up short"
@@ -638,12 +606,6 @@
       "press": "hold",
       "when": "settings.map_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "map",
-      "press": "hold",
-      "when": "settings.map_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "navi",
@@ -703,13 +665,6 @@
     },
     {
       "key": "navi",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.navi_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "navi",
       "press": "hold",
       "when": "settings.navi_hold_send=seek_up",
       "send": "seek_up short"
@@ -755,12 +710,6 @@
       "press": "hold",
       "when": "settings.navi_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "navi",
-      "press": "hold",
-      "when": "settings.navi_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "media",
@@ -820,13 +769,6 @@
     },
     {
       "key": "media",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.media_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "media",
       "press": "hold",
       "when": "settings.media_hold_send=seek_up",
       "send": "seek_up short"
@@ -872,12 +814,6 @@
       "press": "hold",
       "when": "settings.media_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "media",
-      "press": "hold",
-      "when": "settings.media_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "radio",
@@ -937,13 +873,6 @@
     },
     {
       "key": "radio",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.radio_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "radio",
       "press": "hold",
       "when": "settings.radio_hold_send=seek_up",
       "send": "seek_up short"
@@ -989,12 +918,6 @@
       "press": "hold",
       "when": "settings.radio_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "radio",
-      "press": "hold",
-      "when": "settings.radio_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "phone",
@@ -1054,13 +977,6 @@
     },
     {
       "key": "phone",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.phone_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "phone",
       "press": "hold",
       "when": "settings.phone_hold_send=seek_up",
       "send": "seek_up short"
@@ -1106,12 +1022,6 @@
       "press": "hold",
       "when": "settings.phone_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "phone",
-      "press": "hold",
-      "when": "settings.phone_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "setup",
@@ -1171,13 +1081,6 @@
     },
     {
       "key": "setup",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.setup_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "setup",
       "press": "hold",
       "when": "settings.setup_hold_send=seek_up",
       "send": "seek_up short"
@@ -1223,12 +1126,6 @@
       "press": "hold",
       "when": "settings.setup_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "setup",
-      "press": "hold",
-      "when": "settings.setup_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "seek_up",
@@ -1288,13 +1185,6 @@
     },
     {
       "key": "seek_up",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.seek_up_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "seek_up",
       "press": "hold",
       "when": "settings.seek_up_hold_send=seek_up",
       "send": "seek_up short"
@@ -1340,12 +1230,6 @@
       "press": "hold",
       "when": "settings.seek_up_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "seek_up",
-      "press": "hold",
-      "when": "settings.seek_up_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "seek_down",
@@ -1405,13 +1289,6 @@
     },
     {
       "key": "seek_down",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.seek_down_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "seek_down",
       "press": "hold",
       "when": "settings.seek_down_hold_send=seek_up",
       "send": "seek_up short"
@@ -1457,12 +1334,6 @@
       "press": "hold",
       "when": "settings.seek_down_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "seek_down",
-      "press": "hold",
-      "when": "settings.seek_down_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "tune_up",
@@ -1522,13 +1393,6 @@
     },
     {
       "key": "tune_up",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.tune_up_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "tune_up",
       "press": "hold",
       "when": "settings.tune_up_hold_send=seek_up",
       "send": "seek_up short"
@@ -1574,12 +1438,6 @@
       "press": "hold",
       "when": "settings.tune_up_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "tune_up",
-      "press": "hold",
-      "when": "settings.tune_up_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "tune_down",
@@ -1639,13 +1497,6 @@
     },
     {
       "key": "tune_down",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.tune_down_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "tune_down",
       "press": "hold",
       "when": "settings.tune_down_hold_send=seek_up",
       "send": "seek_up short"
@@ -1691,12 +1542,6 @@
       "press": "hold",
       "when": "settings.tune_down_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "tune_down",
-      "press": "hold",
-      "when": "settings.tune_down_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "mode",
@@ -1756,13 +1601,6 @@
     },
     {
       "key": "mode",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.mode_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "mode",
       "press": "hold",
       "when": "settings.mode_hold_send=seek_up",
       "send": "seek_up short"
@@ -1808,12 +1646,6 @@
       "press": "hold",
       "when": "settings.mode_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "mode",
-      "press": "hold",
-      "when": "settings.mode_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "call",
@@ -1873,13 +1705,6 @@
     },
     {
       "key": "call",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.call_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "call",
       "press": "hold",
       "when": "settings.call_hold_send=seek_up",
       "send": "seek_up short"
@@ -1925,12 +1750,6 @@
       "press": "hold",
       "when": "settings.call_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "call",
-      "press": "hold",
-      "when": "settings.call_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "ptt",
@@ -1990,13 +1809,6 @@
     },
     {
       "key": "ptt",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.ptt_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "ptt",
       "press": "hold",
       "when": "settings.ptt_hold_send=seek_up",
       "send": "seek_up short"
@@ -2042,12 +1854,6 @@
       "press": "hold",
       "when": "settings.ptt_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "ptt",
-      "press": "hold",
-      "when": "settings.ptt_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "mute",
@@ -2107,13 +1913,6 @@
     },
     {
       "key": "mute",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.mute_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "mute",
       "press": "hold",
       "when": "settings.mute_hold_send=seek_up",
       "send": "seek_up short"
@@ -2159,12 +1958,6 @@
       "press": "hold",
       "when": "settings.mute_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "mute",
-      "press": "hold",
-      "when": "settings.mute_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "channel_up",
@@ -2224,13 +2017,6 @@
     },
     {
       "key": "channel_up",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.channel_up_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "channel_up",
       "press": "hold",
       "when": "settings.channel_up_hold_send=seek_up",
       "send": "seek_up short"
@@ -2276,12 +2062,6 @@
       "press": "hold",
       "when": "settings.channel_up_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "channel_up",
-      "press": "hold",
-      "when": "settings.channel_up_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "channel_down",
@@ -2341,13 +2121,6 @@
     },
     {
       "key": "channel_down",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.channel_down_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "channel_down",
       "press": "hold",
       "when": "settings.channel_down_hold_send=seek_up",
       "send": "seek_up short"
@@ -2393,12 +2166,6 @@
       "press": "hold",
       "when": "settings.channel_down_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "channel_down",
-      "press": "hold",
-      "when": "settings.channel_down_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "poi",
@@ -2458,13 +2225,6 @@
     },
     {
       "key": "poi",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.poi_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "poi",
       "press": "hold",
       "when": "settings.poi_hold_send=seek_up",
       "send": "seek_up short"
@@ -2510,12 +2270,6 @@
       "press": "hold",
       "when": "settings.poi_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "poi",
-      "press": "hold",
-      "when": "settings.poi_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "connect",
@@ -2575,13 +2329,6 @@
     },
     {
       "key": "connect",
-      "press": "short",
-      "stock": "replace",
-      "when": "settings.connect_send=call_hold",
-      "send": "call hold"
-    },
-    {
-      "key": "connect",
       "press": "hold",
       "when": "settings.connect_hold_send=seek_up",
       "send": "seek_up short"
@@ -2627,12 +2374,6 @@
       "press": "hold",
       "when": "settings.connect_hold_send=call",
       "send": "call short"
-    },
-    {
-      "key": "connect",
-      "press": "hold",
-      "when": "settings.connect_hold_send=call_hold",
-      "send": "call hold"
     },
     {
       "key": "custom",

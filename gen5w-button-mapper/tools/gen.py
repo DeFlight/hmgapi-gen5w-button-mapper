@@ -47,8 +47,8 @@ CHOICES = [
     ("claude", "CarPlay: Claude"),
     ("carhome", "Home"),
     ("carback", "Back"),
-    ("answercall", "Answer / Hold call"),
-    ("endcall", "Reject / End call"),
+    ("answercall", "Answer"),
+    ("endcall", "Reject/End"),
     ("custom", "CarPlay: Custom"),
     ("carapp", "Car app"),
     ("off", "Default"),
@@ -67,11 +67,11 @@ BUTTONS = [
 ]
 STARS = ("custom", "wheel_custom")
 # the car's keys a press can send (Choices.carKey): seek, tune, the wheel's up/down (presets), HOME,
-# and the Call button: its press (answer, or hold the call) and its hold (reject or end the call).
+# and the Call button's press (answer a call, or hold / switch during one)
 # (value of <slot>_send, the press HMG-API makes the car see)
 CAR_KEYS = (("seek_up", "seek_up short"), ("seek_down", "seek_down short"), ("tune_up", "tune_up short"),
             ("tune_down", "tune_down short"), ("channel_up", "channel_up short"), ("channel_down", "channel_down short"),
-            ("home", "home short"), ("call", "call short"), ("call_hold", "call hold"))
+            ("home", "home short"), ("call", "call short"))
 
 CUSTOM_HELP = ("Used when this press is set to CarPlay: Custom. The CarPlay screen's name as the phone "
                "knows it, e.g. maps, music, nowplaying, mobilephone, calshow. Spaces and new lines are "
