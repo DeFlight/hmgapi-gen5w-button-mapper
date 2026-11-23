@@ -219,13 +219,13 @@ public final class Setup extends Activity {
         titles.setOrientation(LinearLayout.VERTICAL);
         titles.addView(text("Button Mapper", 26, TEXT, light));
         titles.addView(text("Press and hold each do their own thing  ·  Default = what the car does", 14, TEXT_2, regular));
-        head.addView(titles);
+        // the titles take what's left (the subtitle wraps), so the controls on the right always fit
+        head.addView(titles, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
         if (loaded) {
             LinearLayout.LayoutParams cl0 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             cl0.leftMargin = dp(24);
             head.addView(profileChip(), cl0);
         }
-        head.addView(new View(this), new LinearLayout.LayoutParams(0, 1, 1));
         status = text("Loading", 15, TEXT_2, regular);
         status.setPadding(dp(16), dp(6), dp(16), dp(6));
         status.setBackgroundDrawable(round(CHIP, 0, dp(16)));
