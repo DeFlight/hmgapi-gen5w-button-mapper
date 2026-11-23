@@ -34,6 +34,7 @@ final class Icon extends View {
     /** the glyph for a choice (Choices.VALUES), or null for none (Default) */
     static String kindOf(String v) {
         if (v == null || "off".equals(v)) return null;
+        if (v.startsWith("aa_")) return aaKind(v.substring(3));
         if ("homekey".equals(v) || "carhome".equals(v)) return "home";
         if ("back".equals(v) || "carback".equals(v)) return "back";
         if ("maps".equals(v) || "waze".equals(v) || "googlemaps".equals(v)) return "nav";
@@ -58,6 +59,15 @@ final class Icon extends View {
         if ("custom".equals(v)) return "code";
         if ("carapp".equals(v)) return "grid";
         return "dot";
+    }
+
+    /** Android Auto's choices (Choices.aaCode), by the part after "aa_" */
+    static String aaKind(String k) {
+        if ("navigation".equals(k)) return "nav";
+        if ("media".equals(k)) return "note";
+        if ("assistant".equals(k)) return "mic";
+        if ("previous".equals(k)) return "prev";
+        return k;   // home, back, phone, playpause, play, pause, next
     }
 
     @Override protected void onDraw(Canvas c) {
@@ -153,6 +163,13 @@ final class Icon extends View {
             tri(c, x + g * .04f, y + g * .14f, x + g * .5f, y + g * .5f, x + g * .04f, y + g * .86f);
             c.drawLine(x + g * .68f, y + g * .16f, x + g * .68f, y + g * .84f, stroke);
             c.drawLine(x + g * .9f, y + g * .16f, x + g * .9f, y + g * .84f, stroke);
+        } else if ("play".equals(k)) {
+            tri(c, x + g * .2f, y + g * .12f, x + g * .86f, y + g * .5f, x + g * .2f, y + g * .88f);
+        } else if ("pause".equals(k)) {
+            r.set(x + g * .2f, y + g * .14f, x + g * .4f, y + g * .86f);
+            c.drawRoundRect(r, g * .05f, g * .05f, fill);
+            r.set(x + g * .6f, y + g * .14f, x + g * .8f, y + g * .86f);
+            c.drawRoundRect(r, g * .05f, g * .05f, fill);
         } else if ("next".equals(k) || "prev".equals(k)) {
             boolean n = "next".equals(k);
             float a = n ? 0 : 1, d = n ? 1 : -1;

@@ -19,8 +19,9 @@ import org.json.JSONObject;
  *   gone (Setup.findingNow false), Choose my buttons is turned off here so the buttons work again.
  * PROFILE: from the hook in the car's home menu, the car switched user profile (extra "user":
  *   0 Guest, 1, 2; -1 a profile's name or picture changed): that profile's buttons (Profiles).
- * PHONE: from the hook in the CarPlay app, a CarPlay session started (extra "on" true) or
- *   ended; BOOT_COMPLETED: no phone yet. Both work out which presses HMG-API takes (Live).
+ * PHONE: from the hooks in the CarPlay and Android Auto apps, a CarPlay session (or, extra "aa"
+ *   true, Android Auto) started (extra "on" true) or ended; BOOT_COMPLETED: no phone yet. Both
+ *   work out which presses HMG-API takes (Live).
  *
  * A CarPlay screen sends the CarPlay app's own shortcut, com.hkmc.intent.action.DIPO_CUSTOM_SHORTCUT
  * (int extra CarPlayMode: 0 home, 1 maps, 5 now playing), which brings CarPlay up from the
@@ -34,6 +35,7 @@ import org.json.JSONObject;
 public final class Keys extends BroadcastReceiver {
     static final String TAG = "ButtonMapper";
     static final String P = "com.deflight.buttonmapper.";
+    static final String CONNECTED = " connected", ENDED = " ended";
     static final ComponentName NEMESIS = new ComponentName("com.nemesis.manager", "com.nemesis.manager.MainActivity");
 
     @Override
@@ -61,10 +63,11 @@ public final class Keys extends BroadcastReceiver {
         } else if ((P + "PHONE").equals(action) || Intent.ACTION_BOOT_COMPLETED.equals(action)) {
             boolean boot = Intent.ACTION_BOOT_COMPLETED.equals(action);
             boolean on = !boot && intent.getBooleanExtra("on", false);
-            Live.phone(c, on);
+            boolean aa = intent.getBooleanExtra("aa", false);
+            Live.phone(c, boot ? 0 : aa ? Live.ANDROID_AUTO : Live.CARPLAY, on);
             key = null;
             slot = null;
-            why = boot ? "boot" : on ? "CarPlay connected" : "CarPlay ended";
+            why = boot ? "boot" : (aa ? "Android Auto" : "CarPlay") + (on ? CONNECTED : ENDED);
         } else if ((P + "STAR_HU").equals(action)) {
             key = slot = "custom";
             why = null;
@@ -93,7 +96,7 @@ public final class Keys extends BroadcastReceiver {
             @Override public void run() {
                 try {
                     if (slot == null) {
-                        Live.update(c, why, !"CarPlay connected".equals(why) && !"CarPlay ended".equals(why));
+                        Live.update(c, why, !why.endsWith(CONNECTED) && !why.endsWith(ENDED));
                         if ("boot".equals(why)) Profiles.carSwitched(c, -1, "boot");   // the profile the car started with
                     }
                     else Keys.run(c, key, slot);
@@ -159,6 +162,7 @@ public final class Keys extends BroadcastReceiver {
             }
             return;
         }
+        if (Choices.isAndroidAuto(v)) { toAndroidAuto(c, slot, v); return; }
         String target = Choices.target(saved, slot);
         if (target == null) { Log.w(TAG, slot + ": nothing to send (" + v + ")"); note(c, slot + ": nothing to send (" + v + ")"); return; }
         note(c, slot + " -> CarPlay " + target);
@@ -179,6 +183,23 @@ public final class Keys extends BroadcastReceiver {
         if (cn == null) { Log.w(TAG, slot + ": no car app picked"); note(c, slot + ": no car app picked"); return; }
         if (CarApps.TILE.equals(cn.getPackageName())) { tile(c, cn.getClassName(), slot); return; }
         openApp(c, cn, slot);
+    }
+
+    /*
+     * An Android Auto key, sent by this mod's hook in the Android Auto app as the car sends its own.
+     * A key that changes the screen first brings Android Auto up with the car's own shortcut,
+     * GPM_CUSTOM_SHORTCUT (CarPlayMode 0: Android Auto as it was; skipped while it's on screen).
+     */
+    static void toAndroidAuto(Context c, String slot, String v) {
+        int code = Choices.aaCode(v);
+        long delay = 0;
+        if (Choices.aaScreen(v)) {
+            c.sendBroadcast(new Intent("com.hkmc.intent.action.GPM_CUSTOM_SHORTCUT").putExtra("CarPlayMode", 0));
+            delay = 600;
+        }
+        c.sendBroadcast(new Intent(P + "AA_KEY").setPackage("com.google.android.projection.sink")
+                .putExtra("key", slot).putExtra("code", code).putExtra("delay", delay));
+        note(c, slot + " -> Android Auto key " + code + (delay > 0 ? " (Android Auto brought up first)" : ""));
     }
 
     /** to this mod's hook in the CarPlay app */

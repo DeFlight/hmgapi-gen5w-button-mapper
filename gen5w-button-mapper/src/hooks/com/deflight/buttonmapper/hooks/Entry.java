@@ -37,6 +37,7 @@ public final class Entry extends ModEntry {
     @Override
     public void appLoaded(final ModContext m, LoadedApp app) throws Throwable {
         if (Launcher.PKG.equals(app.packageName) && Launcher.PKG.equals(app.processName)) { Launcher.loaded(m, app); return; }
+        if (AndroidAuto.PKG.equals(app.packageName) && AndroidAuto.PKG.equals(app.processName)) { AndroidAuto.loaded(m, app); return; }
         if (!DIPO.equals(app.packageName) || !DIPO.equals(app.processName)) return;
         mod = m;
         Hooks.findAndHookMethod(SERVICE, app.classLoader, "onCreate", new OnCreate());

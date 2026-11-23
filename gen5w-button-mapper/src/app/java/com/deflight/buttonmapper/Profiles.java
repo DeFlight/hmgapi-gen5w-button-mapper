@@ -165,7 +165,7 @@ final class Profiles {
                 if (user < 0) user = carUser(c);
                 boolean changed = adopt(c, v);
                 if (user >= 0 && follow(v) && switchTo(v, user)) changed = true;
-                if (Live.flags(v, Live.phone(c)) || changed) {
+                if (Live.flags(v, Live.phones(c)) || changed) {
                     Daemon.settingSet(v.toString());
                     Log.i(Keys.TAG, why + ": profile " + inUse(v) + " in use");
                 }

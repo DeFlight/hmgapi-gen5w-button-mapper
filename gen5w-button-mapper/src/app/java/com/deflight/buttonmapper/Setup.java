@@ -239,7 +239,9 @@ public final class Setup extends Activity {
         reset = r;
         LinearLayout.LayoutParams pl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         pl.leftMargin = dp(16);
-        head.addView(phoneSwitch(), pl);
+        head.addView(phoneSwitch(new Runnable() {
+            @Override public void run() { build(); }
+        }), pl);
         LinearLayout.LayoutParams rl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         rl.leftMargin = dp(16);
         head.addView(r, rl);
@@ -293,8 +295,9 @@ public final class Setup extends Activity {
                 grid.addView(line);
             }
         }
-        TextView notes = text("CarPlay choices work while a phone is connected; "
-                + "with no phone the button does what the car does.", 14, TEXT_3, regular);
+        TextView notes = text((aaSide() ? "Android Auto" : "CarPlay") + " choices work while "
+                + (aaSide() ? "Android Auto" : "CarPlay") + " is connected; "
+                + "otherwise the button does what the car does.", 14, TEXT_3, regular);
         notes.setPadding(dp(4), dp(4), dp(4), dp(8));
         grid.addView(notes);
 
@@ -533,7 +536,9 @@ public final class Setup extends Activity {
         head.addView(text(title(s), 24, TEXT, light), new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
         LinearLayout.LayoutParams psl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         psl.rightMargin = dp(16);
-        head.addView(phoneSwitch(), psl);
+        head.addView(phoneSwitch(new Runnable() {
+            @Override public void run() { d.dismiss(); build(); pick(s); }
+        }), psl);
         TextView x = text("✕", 24, TEXT_2, light);
         x.setGravity(Gravity.CENTER);
         x.setBackgroundDrawable(pressable(Color.TRANSPARENT, PRESS, 0, dp(24)));
@@ -547,11 +552,13 @@ public final class Setup extends Activity {
         list.setOrientation(LinearLayout.VERTICAL);
         String now = Choices.value(ed(), slot(s));
         final int cols = 6;   // every choice on one screen on the 1920 x 720 display
-        for (int g = 0; g < Choices.GROUPS.length; g++) {
-            TextView gt = text(Choices.GROUPS[g].toUpperCase(), 13, TEXT_3, bold);
+        boolean aa = aaSide();
+        String[] groups = Choices.groups(aa);
+        for (int g = 0; g < groups.length; g++) {
+            TextView gt = text(groups[g].toUpperCase(), 13, TEXT_3, bold);
             gt.setPadding(dp(4), dp(18), 0, dp(8));
             list.addView(gt);
-            int[] items = Choices.GROUP_ITEMS[g];
+            int[] items = Choices.groupItems(aa)[g];
             for (int r = 0; r < items.length; r += cols) {
                 LinearLayout line = new LinearLayout(this);
                 for (int k = r; k < r + cols; k++) {
@@ -798,28 +805,40 @@ public final class Setup extends Activity {
         return bar;
     }
 
-    /** CarPlay | Android Auto: which phone the phone choices go to. Android Auto isn't ready yet: shown, can't be picked. */
-    View phoneSwitch() {
+    /**
+     * CarPlay | Android Auto: which phone's choices the picker shows (this app's preferences,
+     * "phone"). Until picked, Android Auto when only Android Auto is connected, else CarPlay.
+     * Buttons keep what they're set to either way.
+     */
+    boolean aaSide() {
+        String p = prefs().getString("phone", "");
+        if (p.length() > 0) return "aa".equals(p);
+        return Live.phones(this) == Live.ANDROID_AUTO;
+    }
+
+    /** the switch; then runs after a change (the screen or picker built again) */
+    View phoneSwitch(final Runnable then) {
         LinearLayout seg = new LinearLayout(this);
         seg.setGravity(Gravity.CENTER_VERTICAL);
         seg.setPadding(dp(4), dp(4), dp(4), dp(4));
         seg.setBackgroundDrawable(round(CHIP, 0, dp(22)));
-        TextView cp = text("CarPlay", 15, ON_ACCENT, bold);
-        cp.setGravity(Gravity.CENTER);
-        cp.setPadding(dp(18), dp(8), dp(18), dp(8));
-        cp.setBackgroundDrawable(round(ACCENT, 0, dp(18)));
-        seg.addView(cp);
-        LinearLayout aa = new LinearLayout(this);
-        aa.setGravity(Gravity.CENTER_VERTICAL);
-        aa.setPadding(dp(18), dp(8), dp(14), dp(8));
-        aa.addView(text("Android Auto", 15, TEXT_3, regular));
-        TextView soon = text("SOON", 10, TEXT_3, bold);
-        soon.setPadding(dp(6), dp(1), dp(6), dp(1));
-        soon.setBackgroundDrawable(round(Color.TRANSPARENT, TEXT_3, dp(8)));
-        LinearLayout.LayoutParams sl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        sl.leftMargin = dp(8);
-        aa.addView(soon, sl);
-        seg.addView(aa);
+        boolean aa = aaSide();
+        String[] titles = { "CarPlay", "Android Auto" };
+        for (int k = 0; k < 2; k++) {
+            final boolean side = k == 1;
+            boolean on = side == aa;
+            TextView t = text(titles[k], 15, on ? ON_ACCENT : TEXT_2, on ? bold : regular);
+            t.setGravity(Gravity.CENTER);
+            t.setPadding(dp(18), dp(8), dp(18), dp(8));
+            t.setBackgroundDrawable(on ? round(ACCENT, 0, dp(18)) : pressable(0, PRESS, 0, dp(18)));
+            if (!on) t.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    prefs().edit().putString("phone", side ? "aa" : "carplay").commit();
+                    then.run();
+                }
+            });
+            seg.addView(t);
+        }
         return seg;
     }
 
@@ -1250,11 +1269,11 @@ public final class Setup extends Activity {
         status.setVisibility(View.INVISIBLE);
         boolean stale = values.optBoolean("finding", false);   // left on (the screen was closed mid-way)
         if (stale) putFinding(false);
-        if (moved || stale || Live.flags(values, Live.phone(this))) save();
+        if (moved || stale || Live.flags(values, Live.phones(this))) save();
     }
 
     void save() {
-        Live.flags(values, Live.phone(this));
+        Live.flags(values, Live.phones(this));
         final String json = values.toString();
         status(true, "Saving");
         final Context app = getApplicationContext();

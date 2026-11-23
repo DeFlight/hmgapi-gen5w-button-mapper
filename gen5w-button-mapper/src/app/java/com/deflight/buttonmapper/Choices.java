@@ -92,6 +92,8 @@ final class Choices {
         "calendar", "settings", "siri", "playpause", "next", "previous",
         "seekup", "seekdown", "tuneup", "tunedown", "presetup", "presetdown",
         "spotify", "tidal", "audible", "pandora", "amznmp3", "youtubemusic", "waze", "googlemaps", "whatsapp", "claude",
+        "aa_home", "aa_back", "aa_navigation", "aa_media", "aa_phone", "aa_assistant",
+        "aa_playpause", "aa_play", "aa_pause", "aa_next", "aa_previous",
         "carhome", "carback", "answercall", "endcall", "custom", "carapp", "off",
     };
     static final String[] TITLES = {
@@ -100,6 +102,9 @@ final class Choices {
         "CarPlay: Siri", "CarPlay: Play/Pause", "CarPlay: Next Track", "CarPlay: Previous Track",
         "Seek Up", "Seek Down", "Tune Up", "Tune Down", "Preset Up", "Preset Down",
         "CarPlay: Spotify", "CarPlay: Tidal", "CarPlay: Audible", "CarPlay: Pandora", "CarPlay: Amazon Music", "CarPlay: YouTube Music", "CarPlay: Waze", "CarPlay: Google Maps", "CarPlay: WhatsApp", "CarPlay: Claude",
+        "Android Auto: Home", "Android Auto: Back", "Android Auto: Navigation", "Android Auto: Media", "Android Auto: Phone",
+        "Android Auto: Assistant", "Android Auto: Play/Pause", "Android Auto: Play", "Android Auto: Pause",
+        "Android Auto: Next Track", "Android Auto: Previous Track",
         "Home", "Back", "Answer", "Reject/End", "CarPlay: Custom", "Car app", "Default",
     };
 
@@ -114,12 +119,60 @@ final class Choices {
     static final String PREVIOUS = "#C:ScanPreviousTrack";
     static final String SIRI = "#Siri";
 
-    /** the setup screen's picker: groups of VALUES indexes, in order */
+    /** the setup screen's picker: groups of VALUES indexes, in order, for the CarPlay side of the switch */
     static final String[] GROUPS = { "CarPlay", "Other CarPlay apps", "Media keys", "Car", "More" };
     static final int[][] GROUP_ITEMS = {
         range("homekey", "siri"), range("spotify", "claude"), range("playpause", "presetdown"),
         pick("carhome", "carback", "answercall", "endcall", "carapp"), pick("custom", "off"),
     };
+    /* the Android Auto side: Android Auto opens the last app used in each kind (navigation, media,
+       phone); no app by name, and no Custom */
+    static final String[] AA_GROUPS = { "Android Auto", "Media keys", "Car", "More" };
+    static final int[][] AA_GROUP_ITEMS = {
+        range("aa_home", "aa_assistant"),
+        concat(range("aa_playpause", "aa_previous"), range("seekup", "presetdown")),
+        pick("carhome", "carback", "answercall", "endcall", "carapp"), pick("off"),
+    };
+
+    static String[] groups(boolean aa) { return aa ? AA_GROUPS : GROUPS; }
+    static int[][] groupItems(boolean aa) { return aa ? AA_GROUP_ITEMS : GROUP_ITEMS; }
+
+    static int[] concat(int[] a, int[] b) {
+        int[] out = new int[a.length + b.length];
+        System.arraycopy(a, 0, out, 0, a.length);
+        System.arraycopy(b, 0, out, a.length, b.length);
+        return out;
+    }
+
+    /** Android Auto choices: "aa_..." */
+    static boolean isAndroidAuto(String v) {
+        return v != null && v.startsWith("aa_");
+    }
+
+    /**
+     * An Android Auto choice's key (Android's key codes, which Android Auto uses; 0x1000x are
+     * Android Auto's own: media, navigation, phone), or 0.
+     */
+    static int aaCode(String v) {
+        if ("aa_home".equals(v)) return 3;
+        if ("aa_back".equals(v)) return 4;
+        if ("aa_navigation".equals(v)) return 0x10002;
+        if ("aa_media".equals(v)) return 0x10001;
+        if ("aa_phone".equals(v)) return 0x10004;
+        if ("aa_assistant".equals(v)) return 84;   // SEARCH: the car's own voice key sends it to Android Auto
+        if ("aa_playpause".equals(v)) return 85;
+        if ("aa_play".equals(v)) return 126;
+        if ("aa_pause".equals(v)) return 127;
+        if ("aa_next".equals(v)) return 87;
+        if ("aa_previous".equals(v)) return 88;
+        return 0;
+    }
+
+    /** an Android Auto key that changes the screen: Android Auto is brought up first */
+    static boolean aaScreen(String v) {
+        return isAndroidAuto(v) && !"aa_playpause".equals(v) && !"aa_play".equals(v) && !"aa_pause".equals(v)
+                && !"aa_next".equals(v) && !"aa_previous".equals(v);
+    }
 
     /** these values, in order (the More group leaves out the old app choices) */
     static int[] pick(String... vs) {
@@ -132,6 +185,12 @@ final class Choices {
     static boolean needsPhone(String v) {
         return !("off".equals(v) || "carapp".equals(v)
                 || carKey(v) != null || "carback".equals(v) || "endcall".equals(v));
+    }
+
+    /** the phone a choice needs: Live.CARPLAY, Live.ANDROID_AUTO, or 0 (none) */
+    static int phoneFor(String v) {
+        if (!needsPhone(v)) return 0;
+        return isAndroidAuto(v) ? Live.ANDROID_AUTO : Live.CARPLAY;
     }
 
     /*
@@ -166,6 +225,7 @@ final class Choices {
     static String shortTitle(int at) {
         String t = TITLES[at];
         if (t.startsWith("CarPlay: ")) t = t.substring(9);
+        if (t.startsWith("Android Auto: ")) t = t.substring(14);
         if ("homekey".equals(VALUES[at])) t = "Home Button";
         return t;
     }
@@ -175,6 +235,7 @@ final class Choices {
         if ("off".equals(VALUES[at])) return "";
         if ("custom".equals(VALUES[at])) return "Custom app";
         if ("carapp".equals(VALUES[at])) return "Car app";
+        if (isAndroidAuto(VALUES[at])) return "Android Auto";
         if ("carhome".equals(VALUES[at]) || "carback".equals(VALUES[at]) || "answercall".equals(VALUES[at]) || "endcall".equals(VALUES[at])) return "Car";
         for (int g = 0; g < GROUPS.length; g++)
             for (int i : GROUP_ITEMS[g]) if (i == at) return g == 1 ? "CarPlay app" : GROUPS[g];
@@ -215,7 +276,7 @@ final class Choices {
         if ("calendar".equals(v)) return "calshow:";           // the phone opens Calendar for calshow:, not calendar:
         if ("settings".equals(v)) return "carplaysettings:";   // CarPlay's own Settings app
         if ("custom".equals(v)) return custom(saved.optString(slot + "_custom", ""));
-        if (!needsPhone(v)) return null;
+        if (!needsPhone(v) || isAndroidAuto(v)) return null;
         return v + ":";
     }
 

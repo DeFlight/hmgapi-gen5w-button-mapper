@@ -45,6 +45,17 @@ CHOICES = [
     ("googlemaps", "CarPlay: Google Maps"),
     ("whatsapp", "CarPlay: WhatsApp"),
     ("claude", "CarPlay: Claude"),
+    ("aa_home", "Android Auto: Home"),
+    ("aa_back", "Android Auto: Back"),
+    ("aa_navigation", "Android Auto: Navigation"),
+    ("aa_media", "Android Auto: Media"),
+    ("aa_phone", "Android Auto: Phone"),
+    ("aa_assistant", "Android Auto: Assistant"),
+    ("aa_playpause", "Android Auto: Play/Pause"),
+    ("aa_play", "Android Auto: Play"),
+    ("aa_pause", "Android Auto: Pause"),
+    ("aa_next", "Android Auto: Next Track"),
+    ("aa_previous", "Android Auto: Previous Track"),
     ("carhome", "Home"),
     ("carback", "Back"),
     ("answercall", "Answer"),
@@ -112,7 +123,7 @@ def settings():
         out.append({
             "key": slot + "_on", "type": "boolean", "default": False, "private": True,
             "title": title + ": taken from the car",
-            "description": "Set by the app: on when this press isn't Default and, for a CarPlay choice, a phone is connected.",
+            "description": "Set by the app: on when this press isn't Default and, for a CarPlay or Android Auto choice, that phone is connected.",
         })
     out.append({
         "key": "finding", "type": "boolean", "default": False, "private": True,

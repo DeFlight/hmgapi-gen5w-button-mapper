@@ -1,13 +1,13 @@
 {
   "id": "gen5w-button-mapper",
   "name": "Gen5W Button Mapper",
-  "version": "1.1.0",
+  "version": "1.2.0-rc.1",
   "hmgapi": ">=1.0.0",
   "authors": [
     "DeFlight, LLC"
   ],
   "license": "MIT",
-  "description": "Choose what each button's press and hold do: a CarPlay screen or media key, a car screen or any app on the car, the car's Home or Back, or Default (what the car does). MAP, NAV, MEDIA, RADIO, PHONE, SETUP, HOME, SEEK, TUNE, MODE, CALL, VOICE, MUTE, POI, CONNECT and the \u2606 \u2605 buttons, whichever the car has. CarPlay choices work only while a phone is connected; otherwise the button does what the car does. Set it up from the Button Mapper tile in the app menu. Each of the car's profiles (Profile 1, Profile 2, Guest) has its own buttons and they switch with the car. Three presses of NAV within 1.5 s each still open NEMESIS Manager.",
+  "description": "Choose what each button's press and hold do: a CarPlay or Android Auto screen or key, a car screen or any app on the car, the car's Home or Back, or Default (what the car does). MAP, NAV, MEDIA, RADIO, PHONE, SETUP, HOME, SEEK, TUNE, MODE, CALL, VOICE, MUTE, POI, CONNECT and the \u2606 \u2605 buttons, whichever the car has. CarPlay and Android Auto choices work only while that phone is connected; otherwise the button does what the car does. Set it up from the Button Mapper tile in the app menu. Each of the car's profiles (Profile 1, Profile 2, Guest) has its own buttons and they switch with the car. Three presses of NAV within 1.5 s each still open NEMESIS Manager.",
   "apps": [
     {
       "apk": "app/ButtonMapper.apk",
