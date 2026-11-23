@@ -43,6 +43,7 @@ final class Icon extends View {
         if ("podcasts".equals(v)) return "podcast";
         if ("audiobooks".equals(v) || "audible".equals(v)) return "book";
         if ("mobilephone".equals(v) || "answercall".equals(v) || "endcall".equals(v)) return "phone";
+        if ("rearcamera".equals(v)) return "camera";
         if ("messages".equals(v) || "whatsapp".equals(v) || "claude".equals(v)) return "bubble";
         if ("calendar".equals(v)) return "calendar";
         if ("settings".equals(v)) return "gear";
@@ -163,6 +164,13 @@ final class Icon extends View {
             tri(c, x + g * .04f, y + g * .14f, x + g * .5f, y + g * .5f, x + g * .04f, y + g * .86f);
             c.drawLine(x + g * .68f, y + g * .16f, x + g * .68f, y + g * .84f, stroke);
             c.drawLine(x + g * .9f, y + g * .16f, x + g * .9f, y + g * .84f, stroke);
+        } else if ("camera".equals(k)) {
+            r.set(x + g * .08f, y + g * .28f, x + g * .92f, y + g * .84f);
+            c.drawRoundRect(r, g * .1f, g * .1f, fill);
+            r.set(x + g * .32f, y + g * .16f, x + g * .62f, y + g * .32f);
+            c.drawRoundRect(r, g * .04f, g * .04f, fill);
+            c.drawCircle(x + g * .5f, y + g * .56f, g * .2f, tile);
+            c.drawCircle(x + g * .5f, y + g * .56f, g * .11f, fill);
         } else if ("play".equals(k)) {
             tri(c, x + g * .2f, y + g * .12f, x + g * .86f, y + g * .5f, x + g * .2f, y + g * .88f);
         } else if ("pause".equals(k)) {

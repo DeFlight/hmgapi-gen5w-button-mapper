@@ -237,17 +237,17 @@ public final class Setup extends Activity {
             @Override public void onClick(View v) { if (loaded) askReset(); }
         });
         reset = r;
-        LinearLayout.LayoutParams pl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        pl.leftMargin = dp(16);
-        head.addView(phoneSwitch(new Runnable() {
+        // second row: CarPlay | Android Auto, Reset all, Auto/Day/Night (one row was too wide for some screens)
+        LinearLayout tools = new LinearLayout(this);
+        tools.setGravity(Gravity.CENTER_VERTICAL);
+        tools.addView(phoneSwitch(new Runnable() {
             @Override public void run() { build(); }
-        }), pl);
-        LinearLayout.LayoutParams rl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        rl.leftMargin = dp(16);
-        head.addView(r, rl);
+        }));
+        tools.addView(new View(this), new LinearLayout.LayoutParams(0, 1, 1));
+        tools.addView(r);
         LinearLayout.LayoutParams ll = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         ll.leftMargin = dp(16);
-        head.addView(lookSwitch(), ll);
+        tools.addView(lookSwitch(), ll);
         TextView close = text("✕", 26, TEXT_2, light);
         close.setGravity(Gravity.CENTER);
         close.setBackgroundDrawable(pressable(Color.TRANSPARENT, PRESS, 0, dp(28)));
@@ -258,6 +258,9 @@ public final class Setup extends Activity {
         cl.leftMargin = dp(16);
         head.addView(close, cl);
         page.addView(head);
+        LinearLayout.LayoutParams tl = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        tl.topMargin = dp(10);
+        page.addView(tools, tl);
         if (loaded && !editingInUse() && !finding) page.addView(otherBar());
         page.addView(findBar());
 
