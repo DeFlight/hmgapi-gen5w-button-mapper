@@ -120,6 +120,8 @@ Play and Pause can't be separate choices. When CarPlay connects, the car tells t
 | Assistant | Starts Google Assistant, as the steering wheel's voice button does |
 | Play/Pause, Play, Pause, Next Track, Previous Track | Android Auto's media keys |
 
+![The picker on the Android Auto side](docs/img/picker-android-auto.png)
+
 Screens (Home, Back, Navigation, Media, Phone, Assistant) bring Android Auto onto the screen first. On the Android Auto side, **Media keys** also has the car's Seek, Tune and Preset.
 
 **Car** (works without a phone):
