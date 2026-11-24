@@ -1,7 +1,7 @@
 {
   "id": "gen5w-button-mapper",
   "name": "Gen5W Button Mapper",
-  "version": "1.2.0-rc.3",
+  "version": "1.2.0",
   "hmgapi": ">=1.0.0",
   "authors": [
     "DeFlight, LLC"

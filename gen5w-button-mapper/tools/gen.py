@@ -60,7 +60,6 @@ CHOICES = [
     ("carback", "Back"),
     ("answercall", "Answer"),
     ("endcall", "Reject/End"),
-    ("rearcamera", "Rear Camera"),
     ("custom", "CarPlay: Custom"),
     ("carapp", "Car app"),
     ("off", "Default"),

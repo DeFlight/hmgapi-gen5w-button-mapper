@@ -94,7 +94,7 @@ final class Choices {
         "spotify", "tidal", "audible", "pandora", "amznmp3", "youtubemusic", "waze", "googlemaps", "whatsapp", "claude",
         "aa_home", "aa_back", "aa_navigation", "aa_media", "aa_phone", "aa_assistant",
         "aa_playpause", "aa_play", "aa_pause", "aa_next", "aa_previous",
-        "carhome", "carback", "answercall", "endcall", "rearcamera", "custom", "carapp", "off",
+        "carhome", "carback", "answercall", "endcall", "custom", "carapp", "off",
     };
     static final String[] TITLES = {
         "CarPlay: Home Button", "CarPlay: Back", "CarPlay: Maps", "CarPlay: Music", "CarPlay: Now Playing", "CarPlay: Podcasts",
@@ -105,7 +105,7 @@ final class Choices {
         "Android Auto: Home", "Android Auto: Back", "Android Auto: Navigation", "Android Auto: Media", "Android Auto: Phone",
         "Android Auto: Assistant", "Android Auto: Play/Pause", "Android Auto: Play", "Android Auto: Pause",
         "Android Auto: Next Track", "Android Auto: Previous Track",
-        "Home", "Back", "Answer", "Reject/End", "Rear Camera", "CarPlay: Custom", "Car app", "Default",
+        "Home", "Back", "Answer", "Reject/End", "CarPlay: Custom", "Car app", "Default",
     };
 
     /*
@@ -123,7 +123,7 @@ final class Choices {
     static final String[] GROUPS = { "CarPlay", "Other CarPlay apps", "Media keys", "Car", "More" };
     static final int[][] GROUP_ITEMS = {
         range("homekey", "siri"), range("spotify", "claude"), range("playpause", "presetdown"),
-        pick("carhome", "carback", "answercall", "endcall", "rearcamera", "carapp"), pick("custom", "off"),
+        pick("carhome", "carback", "answercall", "endcall", "carapp"), pick("custom", "off"),
     };
     /* the Android Auto side: Android Auto opens the last app used in each kind (navigation, media,
        phone); no app by name, and no Custom */
@@ -131,7 +131,7 @@ final class Choices {
     static final int[][] AA_GROUP_ITEMS = {
         range("aa_home", "aa_assistant"),
         concat(range("aa_playpause", "aa_previous"), range("seekup", "presetdown")),
-        pick("carhome", "carback", "answercall", "endcall", "rearcamera", "carapp"), pick("off"),
+        pick("carhome", "carback", "answercall", "endcall", "carapp"), pick("off"),
     };
 
     static String[] groups(boolean aa) { return aa ? AA_GROUPS : GROUPS; }
@@ -184,7 +184,7 @@ final class Choices {
     /** a choice that works without a phone: Car app, the car's Home and Back, and the car's own media keys */
     static boolean needsPhone(String v) {
         return !("off".equals(v) || "carapp".equals(v)
-                || carKey(v) != null || "carback".equals(v) || "endcall".equals(v) || "rearcamera".equals(v));
+                || carKey(v) != null || "carback".equals(v) || "endcall".equals(v));
     }
 
     /** the phone a choice needs: Live.CARPLAY, Live.ANDROID_AUTO, or 0 (none) */
@@ -236,7 +236,7 @@ final class Choices {
         if ("custom".equals(VALUES[at])) return "Custom app";
         if ("carapp".equals(VALUES[at])) return "Car app";
         if (isAndroidAuto(VALUES[at])) return "Android Auto";
-        if ("carhome".equals(VALUES[at]) || "carback".equals(VALUES[at]) || "answercall".equals(VALUES[at]) || "endcall".equals(VALUES[at]) || "rearcamera".equals(VALUES[at])) return "Car";
+        if ("carhome".equals(VALUES[at]) || "carback".equals(VALUES[at]) || "answercall".equals(VALUES[at]) || "endcall".equals(VALUES[at])) return "Car";
         for (int g = 0; g < GROUPS.length; g++)
             for (int i : GROUP_ITEMS[g]) if (i == at) return g == 1 ? "CarPlay app" : GROUPS[g];
         return "";

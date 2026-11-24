@@ -1,13 +1,13 @@
 # Gen5W Button Mapper
 
-An [HMG-API](https://github.com/Open-HMG/HMG-API) mod for Hyundai, Kia and Genesis cars with a Gen5W head unit that lets you choose what your car's buttons do. On the car it's called **Button Mapper**. Every button gets two choices: one for a short **press** and one for a **hold** (about 0.8 s). Each can open a CarPlay screen or app, send a media key, open any screen on the car, or stay what the car does on its own (**Default**, which is where everything starts).
+An [HMG-API](https://github.com/Open-HMG/HMG-API) mod for Hyundai, Kia and Genesis cars with a Gen5W head unit that lets you choose what your car's buttons do. On the car it's called **Button Mapper**. Every button gets two choices: one for a short **press** and one for a **hold** (about 0.8 s). Each can open a CarPlay or Android Auto screen, send a media key, open any screen on the car, or stay what the car does on its own (**Default**, which is where everything starts).
 
 By DeFlight, LLC.
 
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-0070BA?logo=paypal&logoColor=white)](https://paypal.me/deflight) [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/DeFlight)
 
-> [!IMPORTANT]
-> **CarPlay only for now. Android Auto isn't supported yet.** The phone choices (screens, apps, Siri, media keys) work with Apple CarPlay. The **Android Auto** side of the CarPlay | Android Auto switch is shown as **SOON** and can't be picked. Car, Seek, Tune and Preset choices work whatever phone you use, or with none.
+> [!NOTE]
+> **CarPlay and Android Auto.** Pick the phone with the **CarPlay | Android Auto** switch at the top of the setup screen. Android Auto can't open an app by name (the car can only ask for its navigation, media or phone screen, which opens the last app used), so app choices and Custom are CarPlay only. Car, Seek, Tune and Preset choices work whatever phone you use, or with none.
 
 ![The Button Mapper setup screen](docs/img/setup-screen.png)
 
@@ -50,7 +50,7 @@ Open the **Button Mapper** tile in the car's app menu. Every change saves at onc
 
 - **✕** at the top right of a card (My buttons) removes that button. It asks first, then sets the button's press and hold back to Default and takes it out of My buttons. All buttons still lists it.
 - **Reset all to Default** puts every button's press and hold back to what the car does, for the profile you're editing. It asks first.
-- **CarPlay | Android Auto:** which phone the phone choices go to. Android Auto is coming; for now it shows as **SOON** and can't be picked.
+- **CarPlay | Android Auto:** which phone's choices the picker shows. A button keeps what it's set to when you switch; a CarPlay choice works while CarPlay is connected, an Android Auto choice while Android Auto is connected.
 - **Auto / Day / Night**: the screen follows the car's day and night display (Auto), or stays light or dark.
 
 A button set to anything other than Default always shows in My buttons. Choices made from All buttons are kept until you change them; only ✕, unchecking it in Choose my buttons, or Reset all puts a button back to Default.
@@ -111,14 +111,25 @@ Every choice works for a star's press, including Seek, Tune and Preset, which th
 
 Play and Pause can't be separate choices. When CarPlay connects, the car tells the phone either "Play/Pause toggle" or "separate Play and Pause", never both. The phone ignores the separate ones, so Button Mapper uses the toggle.
 
+**Android Auto** (needs Android Auto connected; pick **Android Auto** on the switch):
+
+| Choice | What it does |
+|---|---|
+| Home, Back | Android Auto's own home and back |
+| Navigation, Media, Phone | That Android Auto screen, with the last app used for it |
+| Assistant | Starts Google Assistant, as the steering wheel's voice button does |
+| Play/Pause, Play, Pause, Next Track, Previous Track | Android Auto's media keys |
+
+Screens (Home, Back, Navigation, Media, Phone, Assistant) bring Android Auto onto the screen first. On the Android Auto side, **Media keys** also has the car's Seek, Tune and Preset.
+
 **Car** (works without a phone):
 
 | Choice | What it does |
 |---|---|
 | Home | The car's own HOME button |
 | Back | The car's own back, like the ‹ at the top left of the screen |
-| Answer | The car's own Call button press: answers an incoming call; during a call, it holds or switches calls as the Call button does |
-| Reject/End | Rejects an incoming call or ends the current one. It sends the car's own end-call command, which the car passes to CarPlay. Tested with CarPlay calls; with only Bluetooth, untested |
+| Answer | The car's own Call button press: answers an incoming call; during a call it does what the car's Call button does (holds or switches calls, or on some cars ends the call) |
+| Reject/End | Rejects an incoming call or ends the current one. It sends the car's own end-call command, which the car passes to CarPlay. Tested with CarPlay and Android Auto calls; with only Bluetooth, untested |
 | Car app | A screen on the car, picked from a list (see below) |
 
 **Car app** list:
@@ -150,9 +161,9 @@ HOME **can** be set. If you change it, the ⌂ at the top of the screen still ta
 
 ## Good to know
 
-- **With no phone connected,** a press set to a CarPlay choice does what the car does (Default). It works again as soon as CarPlay connects. Car, Seek, Tune and Preset choices work either way.
+- **With no phone connected,** a press set to a CarPlay or Android Auto choice does what the car does (Default). It works again as soon as that phone connects. Car, Seek, Tune and Preset choices work either way.
 - **NEMESIS:** three presses of **NAV** within 1.5 s of each other still open NEMESIS Manager, whatever NAV is set to.
-- **Home Button, Back and Play/Pause** need a fresh CarPlay connection after installing (unplug and replug, or turn CarPlay off and on). The car tells the phone which buttons it has only when CarPlay connects.
+- **Home Button, Back and Play/Pause** (CarPlay and Android Auto) need a fresh phone connection after installing (unplug and replug, or turn CarPlay or Android Auto off and on). The car tells the phone which buttons it has only when the phone connects.
 - **Settings** are kept by HMG-API and changed only on the Button Mapper screen. They aren't on the mod's page in the HMG-API app.
 
 ## Requirements
@@ -160,7 +171,7 @@ HOME **can** be set. If you change it, the ⌂ at the top of the screen still ta
 - A Hyundai, Kia or Genesis with a **Gen5W** navigation head unit, the head unit HMG-API supports.
 - **[HMG-API](https://github.com/Open-HMG/HMG-API)** installed ([Installing HMG-API](https://github.com/Open-HMG/HMG-API/wiki/Installing-HMG-API)). After a car firmware update, HMG-API has to be installed again.
 - A **hook map for your car's firmware** in HMG-API (HMG-API's Car Report shows whether there is one). Without one, buttons still open CarPlay from the car's own screens. But nothing works inside CarPlay, Home Button, Siri, the media keys and Back don't work, and some car screens (Climate, Valet Mode, Notifications) won't open.
-- **CarPlay working** on the car, wired or wireless (with the [wireless CarPlay mod](https://github.com/Open-HMG/hmgapi-wireless-cp-aa)), for the CarPlay choices. **Android Auto isn't supported yet.**
+- **CarPlay working** on the car, wired or wireless (with the [wireless CarPlay mod](https://github.com/Open-HMG/hmgapi-wireless-cp-aa)), for the CarPlay choices, or **Android Auto** working for the Android Auto choices.
 - **NEMESIS** only for the three-press NAV shortcut.
 
 ## Compatibility
@@ -170,6 +181,7 @@ HOME **can** be set. If you change it, the ⌂ at the top of the screen still ta
 | Car | Firmware | HMG-API |
 |---|---|---|
 | 2025 Hyundai Ioniq 6 Limited (US) | CEEV.USA.0000.V015.012.260507 | 1.1.0-rc.4 |
+| Kia EV6 (US), Android Auto (Home, Back, Play/Pause, calls) | 260507 | — |
 
 **Should work on** other cars that meet the requirements above. The Common list in Car app follows the US Ioniq 6's home menu. On other cars, items whose app isn't installed don't show, and the rest are under Other apps.
 

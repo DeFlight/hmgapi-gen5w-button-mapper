@@ -7,7 +7,7 @@
       "default": "off",
       "private": true,
       "title": "Head Unit \u2606 press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "custom_custom",
@@ -47,7 +47,7 @@
       "default": "off",
       "private": true,
       "title": "Head Unit \u2606 hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "custom_hold_custom",
@@ -87,7 +87,7 @@
       "default": "off",
       "private": true,
       "title": "Steering Wheel \u2605 press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "wheel_custom_custom",
@@ -127,7 +127,7 @@
       "default": "off",
       "private": true,
       "title": "Steering Wheel \u2605 hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "wheel_custom_hold_custom",
@@ -167,7 +167,7 @@
       "default": "off",
       "private": true,
       "title": "HOME press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "home_custom",
@@ -207,7 +207,7 @@
       "default": "off",
       "private": true,
       "title": "HOME hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "home_hold_custom",
@@ -247,7 +247,7 @@
       "default": "off",
       "private": true,
       "title": "MAP press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "map_custom",
@@ -287,7 +287,7 @@
       "default": "off",
       "private": true,
       "title": "MAP hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "map_hold_custom",
@@ -327,7 +327,7 @@
       "default": "off",
       "private": true,
       "title": "NAV press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "navi_custom",
@@ -367,7 +367,7 @@
       "default": "off",
       "private": true,
       "title": "NAV hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "navi_hold_custom",
@@ -407,7 +407,7 @@
       "default": "off",
       "private": true,
       "title": "MEDIA press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "media_custom",
@@ -447,7 +447,7 @@
       "default": "off",
       "private": true,
       "title": "MEDIA hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "media_hold_custom",
@@ -487,7 +487,7 @@
       "default": "off",
       "private": true,
       "title": "RADIO press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "radio_custom",
@@ -527,7 +527,7 @@
       "default": "off",
       "private": true,
       "title": "RADIO hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "radio_hold_custom",
@@ -567,7 +567,7 @@
       "default": "off",
       "private": true,
       "title": "PHONE press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "phone_custom",
@@ -607,7 +607,7 @@
       "default": "off",
       "private": true,
       "title": "PHONE hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "phone_hold_custom",
@@ -647,7 +647,7 @@
       "default": "off",
       "private": true,
       "title": "SETUP press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "setup_custom",
@@ -687,7 +687,7 @@
       "default": "off",
       "private": true,
       "title": "SETUP hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "setup_hold_custom",
@@ -727,7 +727,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK UP (head unit) press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "seek_up_custom",
@@ -767,7 +767,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK UP (head unit) hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "seek_up_hold_custom",
@@ -807,7 +807,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK DOWN (head unit) press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "seek_down_custom",
@@ -847,7 +847,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK DOWN (head unit) hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "seek_down_hold_custom",
@@ -887,7 +887,7 @@
       "default": "off",
       "private": true,
       "title": "TUNE UP press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "tune_up_custom",
@@ -927,7 +927,7 @@
       "default": "off",
       "private": true,
       "title": "TUNE UP hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "tune_up_hold_custom",
@@ -967,7 +967,7 @@
       "default": "off",
       "private": true,
       "title": "TUNE DOWN press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "tune_down_custom",
@@ -1007,7 +1007,7 @@
       "default": "off",
       "private": true,
       "title": "TUNE DOWN hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "tune_down_hold_custom",
@@ -1047,7 +1047,7 @@
       "default": "off",
       "private": true,
       "title": "MODE press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "mode_custom",
@@ -1087,7 +1087,7 @@
       "default": "off",
       "private": true,
       "title": "MODE hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "mode_hold_custom",
@@ -1127,7 +1127,7 @@
       "default": "off",
       "private": true,
       "title": "CALL press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "call_custom",
@@ -1167,7 +1167,7 @@
       "default": "off",
       "private": true,
       "title": "CALL hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "call_hold_custom",
@@ -1207,7 +1207,7 @@
       "default": "off",
       "private": true,
       "title": "VOICE press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "ptt_custom",
@@ -1247,7 +1247,7 @@
       "default": "off",
       "private": true,
       "title": "VOICE hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "ptt_hold_custom",
@@ -1287,7 +1287,7 @@
       "default": "off",
       "private": true,
       "title": "MUTE press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "mute_custom",
@@ -1327,7 +1327,7 @@
       "default": "off",
       "private": true,
       "title": "MUTE hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "mute_hold_custom",
@@ -1367,7 +1367,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK UP (steering wheel) press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "channel_up_custom",
@@ -1407,7 +1407,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK UP (steering wheel) hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "channel_up_hold_custom",
@@ -1447,7 +1447,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK DOWN (steering wheel) press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "channel_down_custom",
@@ -1487,7 +1487,7 @@
       "default": "off",
       "private": true,
       "title": "SEEK DOWN (steering wheel) hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "channel_down_hold_custom",
@@ -1527,7 +1527,7 @@
       "default": "off",
       "private": true,
       "title": "POI press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "poi_custom",
@@ -1567,7 +1567,7 @@
       "default": "off",
       "private": true,
       "title": "POI hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "poi_hold_custom",
@@ -1607,7 +1607,7 @@
       "default": "off",
       "private": true,
       "title": "CONNECT (Bluelink / Kia Connect) press",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "connect_custom",
@@ -1647,7 +1647,7 @@
       "default": "off",
       "private": true,
       "title": "CONNECT (Bluelink / Kia Connect) hold",
-      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, rearcamera, custom, carapp, off (off: Default, the car's own)."
+      "description": "Picked on the setup screen: homekey, back, maps, music, nowplaying, podcasts, audiobooks, mobilephone, messages, calendar, settings, siri, playpause, next, previous, seekup, seekdown, tuneup, tunedown, presetup, presetdown, spotify, tidal, audible, pandora, amznmp3, youtubemusic, waze, googlemaps, whatsapp, claude, aa_home, aa_back, aa_navigation, aa_media, aa_phone, aa_assistant, aa_playpause, aa_play, aa_pause, aa_next, aa_previous, carhome, carback, answercall, endcall, custom, carapp, off (off: Default, the car's own)."
     },
     {
       "key": "connect_hold_custom",

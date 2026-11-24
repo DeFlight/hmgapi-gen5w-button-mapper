@@ -141,14 +141,6 @@ public final class Keys extends BroadcastReceiver {
             note(c, slot + " -> end call (the car's end-call command)");
             return;
         }
-        if ("rearcamera".equals(v)) {
-            // the car's own Driving Rear View shortcut (what a ★ key set to the car's rear view sends):
-            // the car's camera service (PgsService) turns the rear view on or off, on cars that have
-            // the feature (isSupportDrivingRearView); reverse gear still comes first. Others ignore it.
-            c.sendBroadcast(new Intent("com.hkmc.intent.action.DRVM_SHORTCUT"));
-            note(c, slot + " -> rear camera (the car's Driving Rear View shortcut)");
-            return;
-        }
         if ("carback".equals(v)) {
             // the car's Back key, sent by the hook in the home menu from the car's button device; if
             // it doesn't answer, the broadcast that follows every back on the car (seen on a US
