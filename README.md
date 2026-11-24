@@ -51,7 +51,7 @@ Open the **Button Mapper** tile in the car's app menu. Every change saves at onc
 - **✕** at the top right of a card (My buttons) removes that button. It asks first, then sets the button's press and hold back to Default and takes it out of My buttons. All buttons still lists it.
 - **Reset all to Default** puts every button's press and hold back to what the car does, for the profile you're editing. It asks first.
 - **CarPlay | Android Auto:** which phone's choices the picker shows. A button keeps what it's set to when you switch; a CarPlay choice works while CarPlay is connected, an Android Auto choice while Android Auto is connected.
-- **Auto / Day / Night**: the screen follows the car's day and night display (Auto), or stays light or dark.
+- The screen follows the car's day and night display.
 
 A button set to anything other than Default always shows in My buttons. Choices made from All buttons are kept until you change them; only ✕, unchecking it in Choose my buttons, or Reset all puts a button back to Default.
 

@@ -67,17 +67,8 @@ public final class Setup extends Activity {
         }
     }
 
-    static final String[] LOOKS = { "auto", "day", "night" };
-    static final String[] LOOK_TITLES = { "Auto", "Day", "Night" };
-
-    String look() {
-        return getSharedPreferences("setup", MODE_PRIVATE).getString("look", "auto");
-    }
-
+    /** always follows the car's display, like Light Studio */
     boolean night() {
-        String l = look();
-        if ("day".equals(l)) return false;
-        if ("night".equals(l)) return true;
         return (getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
                 == android.content.res.Configuration.UI_MODE_NIGHT_YES;
     }
@@ -192,12 +183,11 @@ public final class Setup extends Activity {
         if (profileReceiver != null) { try { unregisterReceiver(profileReceiver); } catch (Exception e) { /* gone */ } }
         super.onDestroy();
     }
-
-    /** the car switched day/night: redraw if following it */
+    /** the car switched day/night: redraw */
     @Override
     public void onConfigurationChanged(android.content.res.Configuration c) {
         super.onConfigurationChanged(c);
-        if ("auto".equals(look())) build();
+        build();
     }
 
     /** Draws the whole screen in the current colours (again after a day/night change). */
@@ -237,7 +227,7 @@ public final class Setup extends Activity {
             @Override public void onClick(View v) { if (loaded) askReset(); }
         });
         reset = r;
-        // second row: CarPlay | Android Auto, Reset all, Auto/Day/Night (one row was too wide for some screens)
+        // second row: CarPlay | Android Auto, Reset all (one row was too wide for some screens)
         LinearLayout tools = new LinearLayout(this);
         tools.setGravity(Gravity.CENTER_VERTICAL);
         tools.addView(phoneSwitch(new Runnable() {
@@ -245,9 +235,6 @@ public final class Setup extends Activity {
         }));
         tools.addView(new View(this), new LinearLayout.LayoutParams(0, 1, 1));
         tools.addView(r);
-        LinearLayout.LayoutParams ll = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        ll.leftMargin = dp(16);
-        tools.addView(lookSwitch(), ll);
         TextView close = text("✕", 26, TEXT_2, light);
         close.setGravity(Gravity.CENTER);
         close.setBackgroundDrawable(pressable(Color.TRANSPARENT, PRESS, 0, dp(28)));
@@ -312,30 +299,6 @@ public final class Setup extends Activity {
             if (loaded) { show(s); custom[s].setText(ed().optString(slot(s) + "_custom", "")); }
         }
         if (loaded) status.setVisibility(View.INVISIBLE);
-    }
-
-    /** Auto / Day / Night, a small segmented switch in the header */
-    View lookSwitch() {
-        LinearLayout seg = new LinearLayout(this);
-        seg.setPadding(dp(4), dp(4), dp(4), dp(4));
-        seg.setBackgroundDrawable(round(CHIP, 0, dp(22)));
-        String now = look();
-        for (int k = 0; k < LOOKS.length; k++) {
-            final String l = LOOKS[k];
-            boolean on = l.equals(now);
-            TextView t = text(LOOK_TITLES[k], 15, on ? ON_ACCENT : TEXT_2, on ? bold : regular);
-            t.setGravity(Gravity.CENTER);
-            t.setPadding(dp(18), dp(8), dp(18), dp(8));
-            t.setBackgroundDrawable(on ? round(ACCENT, 0, dp(18)) : pressable(0, PRESS, 0, dp(18)));
-            t.setOnClickListener(new View.OnClickListener() {
-                @Override public void onClick(View v) {
-                    getSharedPreferences("setup", MODE_PRIVATE).edit().putString("look", l).commit();
-                    build();
-                }
-            });
-            seg.addView(t);
-        }
-        return seg;
     }
 
     /** One button's card: its name, a Press row and a Hold row, and a note for the ★ keys and NAV. */
